@@ -1,0 +1,30 @@
+
+/** Footer **/
+.site-footer {
+    background-color: $grisOscuro;
+    margin-top: 3rem;
+}
+.contenedor-footer {
+    padding: 3rem 0;
+    text-align: center;
+
+    @include tablet {
+        .contenedor-footer {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+.site-footer nav {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+        flex-direction: row;
+    }
+}
+
+.copyright {
+    margin: 0;
+    color: $blanco;
+}

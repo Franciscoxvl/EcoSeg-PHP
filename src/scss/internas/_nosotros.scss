@@ -1,0 +1,24 @@
+@include tablet {
+    .contenido-nosotros {
+       @include grid(2, 2rem);
+    }
+}
+
+.texto-nosotros blockquote {
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem 0 3rem 0;
+    text-align: center;
+}
+
+.texto-nosotros p {
+    text-align: justify;
+}
+
+.contenido-nosotros{
+    .imagen{
+        margin:auto 0;
+    }
+}
+
