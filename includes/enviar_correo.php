@@ -25,14 +25,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';  // Cambia esto al servidor SMTP que estás utilizando
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'franciscovaldez86@gmail.com';  // Tu dirección de correo electrónico
+        $mail->Username   = '';  // Tu dirección de correo electrónico
         $mail->Password   = 'tjhb cnhz oaef nttu';  // Tu contraseña del correo electrónico
         $mail->SMTPSecure = 'ssl';
         $mail->Port       = 465;
 
         // Configurar el correo
         $mail->setFrom($email, "Nueva peticion de contacto de ".$nombre);  // Tu dirección de correo y nombre
-        $mail->addAddress('franciscovaldez86@gmail.com');  // Dirección del destinatario
+        $mail->addAddress('');  // Dirección del destinatario
 
         $mail->Subject = 'Nuevo mensaje del formulario de contacto';
         $mail->Body    = "Nombre: $nombre\nCorreo: $email\nTeléfono: $telefono\nMensaje: $mensaje";
